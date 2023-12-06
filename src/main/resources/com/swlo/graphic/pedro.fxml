@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.swlo.graphic.utils.calcules.CohenCheckLimits"
+            prefHeight="400.0" prefWidth="600.0">
+
+</AnchorPane>
+
+
+        <?xml version="1.0" encoding="UTF-8"?>
+
+<fx:scene xmlns:fx="http://javafx.com/fxml/1" xmlns:x="http://javafx.com/fxml/1">
+
+<Group>
+    <children>
+        <Label text="Limites do plano de projeção"/>
+        <HBox>
+            <TextField fx:id="minX" promptText="minX"/>
+            <TextField fx:id="minY" promptText="minY"/>
+        </HBox>
+        <HBox>
+            <TextField fx:id="maxX" promptText="maxX"/>
+            <TextField fx:id="maxY" promptText="maxY"/>
+        </HBox>
+        <Label text="Pontos da reta"/>
+        <HBox>
+            <TextField fx:id="x1" promptText="x1"/>
+            <TextField fx:id="y1" promptText="y1"/>
+        </HBox>
+        <HBox>
+            <TextField fx:id="x2" promptText="x2"/>
+            <TextField fx:id="y2" promptText="y2"/>
+        </HBox>
+        <Button text="Desenhar" onAction="#draw"/>
+        <Canvas fx:id="canvas" width="300" height="200"/>
+    </children>
+</Group>
+
+</fx:scene>
